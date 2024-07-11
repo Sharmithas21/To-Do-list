@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do Application - By Sharathchandar.K</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <!-- Inside the container will add an input field for adding tasks, a list to display the tasks, and buttons for adding and removing tasks.-->
+        <div class="todo-header">
+            <h2>ToDo List</h2>
+            <img src="https://media4.giphy.com/media/kLOkqcrdC5mrCE7k7G/giphy.gif?cid=6c09b952ltd9c07axndvy1ipmk9vxt47o6tvxsjtvbh94cib&ep=v1_gifs_search&rid=giphy.gif&ct=g" height="50px" />
+       </div>
+       <div class="todo-body">
+        <input
+            type="text"
+            id="todoText"
+            class="todo-input"
+            placeholder="Add your items"
+        />
+        <img
+            src="https://cdn.iconscout.com/icon/premium/png-256-thumb/add-list-3732600-3114312.png"
+            alt="+"
+            id="AddUpdateClick"
+            onclick="CreateToDoItems();"
+        />
+        </div>
+        <h5 id="Alert"></h5>
+<ul id="list-items" class="list-items"></ul>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
